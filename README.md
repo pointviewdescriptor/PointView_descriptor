@@ -1,18 +1,7 @@
 # PointView-Descriptor: A Versatile Point View Descriptors of Multi-View Depth Images for 3D Shape Classification
 # Abstraction
 3D shape classification using multi-view point clouds is one of the demanding tasks in computer vision owing to its multitude of applications such as autono-mous driving, robotics, and real-time monitoring. Most methods have studied multi-view capturing to render them 2D images or point clouds and applied a branch of learning models to classify shape categories. The performance of these methods fully confides in the effectiveness of multi-view feature aggregation which limits the overall system and makes it more complex. In this method, we present a structured view descriptor of multi-view capturing in point level to avoid multi-view aggregation. The proposed method explores the relationships among multi-views from a visible point for a specific view. First, the distance-based point descriptors are used to compute distance maps called confidence maps from visible points of specific views to each vertex. We use confidence maps as additional features with point information. Then view information is in-tegrated with distance features by applying a multi-layer perceptron to introduce final view-based point descriptor (PointView-Descriptor). We investigated the performance of several state-of-the-art 3D shape classification methods such as PointNet, PointNet++, and PointView-GCN with PointView-Descriptor. The proposed method dramatically reduces the system complexity and significantly improves performance. It outperforms state-of-the-art methods on ModelNet40 in instance and class levels classification.
-# Citation
-If you find useful research using our ideas, please cite it as follows:
-```
-@inproceedings{seonyoung2024pointview_descriptor,
-  title={PointView-Descriptor: A Versatile Point View Descriptors of Multi-View Depth Images for 3D Shape Classification},
-  author={Seonyoung Jang, Kutub Uddin, Hyungwoo Kang, Byungtae Oh},
-  booktitle={European Conference on Computer Vision 2024 (ECCV)},
-  pages={},
-  year={2024},
-  organization={}
-}
-```
+
 # Install 
 The provided code was tested on Ubuntu 20.04, cuda 11.7, pytorch 1.13.0, and python 3.7 in two RTX GeForce 4090 environments.
 You can run the code by downloading pytorch for your computer, and we conducted the experiment in Anaconda's virtual environment. A virtual environment can be created and run as follows:
