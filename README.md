@@ -15,7 +15,7 @@ You can download the data set used for learning [here](https://shapenet.cs.stanf
 # Create View-Descriptor
 You can create a view descriptor for a downloaded point cloud. The previously acquired data set can be downloaded [here](https://drive.google.com/file/d/1Fs2Qz9iWePmOAwf-TdslSIbAz0tUt5Ui/view?usp=drive_link), and can be created as follows.
 ```
-cd Create_descriptor
+cd create_pvd
 python main.py
 ```
 # Training
