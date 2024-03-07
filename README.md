@@ -31,7 +31,7 @@ You can train and test against a variety of vanilla models.
 You can choose one of [pointnet_cls, pointnet2_cls_ssg, dgcnn_cls, pointmlp_cls] next to --model.
 Below is how the performance of the vanilla model is classified by pointnet++.
 ```
-python train_classification_vanilla.py --model pointnet2_cls_ssg 
+python train_classification_origin.py --model pointnet2_cls_ssg 
 ```
 Additionally, the proposed idea can be applied to various vanilla models, and model can select one of the following [pointnet_cls_ours, pointnet2_cls_ssg_ours, dgcnn_cls_ours, pointmlp_cls_ours].
 The following is how to conduct an experiment adding the proposed idea to pointnet++.
