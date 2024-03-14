@@ -8,7 +8,7 @@ The proposed method explores the relationships between multiple-views from a vis
 We first employed distance-based point descriptors to compute distance maps, called visibility depth maps from the visible points of specific views. 
 We then integrated the view information with distance features by applying a multi-layer perceptron to introduce final view-based point descriptors called PointView-Descriptor. 
 Subsequently, we investigated the performance of several 3D shape classification methods, including PointNet, PointNet++, DGCNN, PointMLP, and PointView-GCN with PointView-Descriptor. 
-The proposed method dramatically reduced the system complexity with significant performance improvement. 
+The proposed method highly improved the performance of low-complexity models without complex and time-consuming feature extraction and aggregation processes.
 
 # Install 
 The provided code was tested on Ubuntu 20.04, cuda 11.7, pytorch 1.13.0, and python 3.7 in two RTX GeForce 4090 environments.
@@ -20,8 +20,10 @@ cd PointView_descriptor
 ```
 # Dataset
 You can download the data set used for learning [here](https://shapenet.cs.stanford.edu/media/modelnet40_normal_resampled.zip) and save it in ‘data/modelnet40_normal_resampled/’.
+
 # Create View-Descriptor
 You can create a view descriptor for a downloaded point cloud. The previously acquired data set can be downloaded [here](https://drive.google.com/file/d/1Fs2Qz9iWePmOAwf-TdslSIbAz0tUt5Ui/view?usp=drive_link), and can be created as follows.
+First, You can refer to the rasterize process [here](https://github.com/seanywang0408/RadianceMapping).
 ```
 cd create_pvd
 python main.py
@@ -44,3 +46,4 @@ python train_classification.py --model pointnet2_cls_ours
 [dgcnn](https://github.com/WangYueFt/dgcnn.git)
 [pointmlp](https://github.com/ma-xu/pointMLP-pytorch.git)
 [PointView-gcn](https://github.com/SMohammadi89/PointView-GCN.git)
+[RadianceMapping](https://github.com/seanywang0408/RadianceMapping)
