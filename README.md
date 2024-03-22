@@ -35,7 +35,7 @@ Below is how the performance of the vanilla model is classified by pointnet++.
 ```
 python train_classification_origin.py --model pointnet2_cls_ssg 
 ```
-Additionally, the proposed idea can be applied to various vanilla models, and model can select one of the following [pointnet_cls_ours, pointnet2_cls_ssg_ours, dgcnn_cls_ours, pointmlp_cls_ours].
+Additionally, the proposed idea can be applied to various vanilla models, and model can select one of the following [pointnet_cls_ours, pointnet2_cls_ours, dgcnn_cls_ours, pointmlp_cls_ours].
 The following is how to conduct an experiment adding the proposed idea to pointnet++.
 ```
 python train_classification.py --model pointnet2_cls_ours
